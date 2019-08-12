@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<!-- <meta http-equiv="refresh" content="2"> -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Название вкладки</title>
+</head>
+<body>
+	Тело страницы.
+	Всё будет в одну строку
+	<h1>Заголовок 1</h1>
+	
+	<h2>Абзацы(абзацы же?)</h2>
+	
+	<p>А это уже в отдельной строке</p>
+	<p>Это <em>EM</em><br />А это <strong>STRONG</strong></p>
+	
+	<h2>6 заголовков</h2>
+	<h3>Заголовок 3</h3>
+	<h4>Заголовок 4</h4>
+	<h5>Заголовок 5</h5>
+	<h6 id="link">Заголовок 6</h6>
+	
+	<h2>Ссылки</h2>
+	<p><a href="#link">ссылка на 6й заголовок</a><p/>
+	<p><a href="https://www.google.com/" accesskey="m">Это_гугл</a><p/>
+	<p><a href="2.html">А_это_ссылка_на_документ_2</a></p>
+	
+	<h2>Списки</h2>
+	<ol>
+		<li>Птиц</li>
+		<li>Млекопитающих
+			<ol>
+				<li>Кошек</li>
+				<li>Собак
+					<ul>
+						<li>Больших</li>
+						<li>Средних</li>
+						<li>Не собак</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>Насекомых</li>
+	</ol>
+	
+	<h3>Списки определений</h3>
+	<dl>
+		<dt>STP</dt>
+		<dd>Spanning Tree Protocol. Протокол канального уровня.<br />
+		Основная задача - утранение петель.</dd>
+		
+		<dt>Молоки</dt>
+		<dd>"Семенная жидкость" рыб</dd>
+		<dd>Также блюдо</dd>
+		
+		<dt>Жора</dt>
+		<dt>Он же Никита</dt>
+		<dd>Это я</dd>
+	</dl>
+	<h2>Картинки</h2>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ravenstein-Tyr-monument-196.png/220px-Ravenstein-Tyr-monument-196.png" width="100" height="200"  alt="Черепах">
+
+	<h2>Таблицы</h2>
+	<table>
+	<tr>
+		<th>Колонитул 1 столбца</th>
+		<th>Колонитул 2 столбца</th>
+		<th>3го столбца</th>
+	</tr>
+    <tr>
+         <td>Строка 1_ячейка 1;</td>
+         <td>Строка 1_ячейка 2;</td>
+         <td>Строка 1_ячейка 3.</td>
+    </tr>
+    <tr>
+         <td>Строка 2_ячейка 1;</td>
+         <td>Строка 2_ячейка 2;</td>
+         <td>Строка 2_ячейка 3.</td>
+    </tr>
+    <tr>
+         <td>Строка 3_ячейка 1;</td>
+         <td>Строка 3_ячейка 2;</td>
+         <td>Строка 3_ячейка 3.</td>
+    </tr>
+    <tr>
+         <td>Строка 4_ячейка 1;</td>
+         <td>Строка 4_ячейка 2;</td>
+         <td>Строка 4_ячейка 3.</td>
+    </tr>
+	</table>
+	<table border="1">
+		<tr>
+			<th>Кошки</th>
+			<th>Собаки</th>
+			<th>Птички</th>
+		</tr>
+		<tr>
+			<td>Простокот</td>
+			<td colspan="2">Птицепёс</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Мейнкун</td>
+			<td>Чихахаха</td>
+			<td>Воробей</td>
+		<tr>
+			<td>Ещё Пёс</td>
+			<td>Ещё Птиц</td>
+		</tr>
+	</table>
+	
+	<h2>Формы</h2>
+	<h3>Кнопки, поля, переключатели. Тег input</h3>
+	<table>
+		<tr>
+			<td>
+				<h4>Просто текстовое поле text:</h4>
+				<input type="text" value="значение по умолчанию" />
+				
+				<h4>Поле с паролем password:</h4>
+				<input type="password" />
+				
+				<h4>Поле выключателей checkbox:</h4>
+				<input type="checkbox" checked="checked" /> включен по умолчанию <br />
+				<input type="checkbox" /> выключен
+				
+				<h4>Поле ПЕРЕключателей radio:</h4>
+				<p>	<input type="radio" name="pole#1" value="1"/>Молоко<br />
+					<input type="radio" name="pole#1" value="2"/>Сливки</p>
+				<p>	<input type="radio" name="pole#2" value="1"/>Кофе<br />
+					<input type="radio" name="pole#2" value="2"/>Чай</p>
+				
+				<h4>Поле с выбором файла file:</h4>
+				<input type="file" />
+			</td>
+			
+			<td>
+			</td>
+			
+			<td>
+				<h4>Кнопка отправки данных программе-обработчику submit:</h4>
+				<input type="submit" value="Надпись 'отправить', к примеру"/>	
+				
+				<h4>То же самое, только кнопка в виде картинки image:</h4>
+				<input type="image" src="Malenkaya_cherepashka.png"/>	
+				
+				<h4>Просто кнопка button:</h4>
+				<input type="button" />	
+				
+				<h4>Сбрасывает все формы к значениям по умолчанию reset:</h4>
+				<input type="reset" />	
+				
+				<h4>Ты видишь это поле? hidden:</h4>
+				<input type="hidden" />
+			</td>
+		<tr/>
+	<table/>
+	
+	<h3>Тег form</h3>
+	
+	<form action="test" method="get">
+		Имя: <input type="text" name="fname"><br />
+		Фамилия: <input type="text" name="lname"><br />
+		<input type="submit" value="Submit">
+	</form>
+	
+	<h3>Тег textarea</h3>
+	
+	<textarea rows="10" cols="20">Текст по умолчанию</textarea> 
+	
+	<h3>Тег select и option</h3>
+	
+	<select>
+		<option value="cat">Кот</option>
+		<option value="dog">Собака</option>
+		<option value="bird">Птичка</option>
+		<option value="osel">Осёл</option>
+	</select>
+	
+	<h2>Скрипты JS</h2>
+	<a href="#here" onclick="alert ('ух ты. Javascript.')">Нажми на меня</a>
+	
+	<h2>Доступные ссылки</h2>
+	<p><a href="https://www.google.com/" accesskey="m">Жми alt+m для перехода в гугл</a><p/>
+	<p><a href="https://www.google.com/" title="ЭТО И ВПРЯМЬ ГУГЛ!">
+		Это гугл. Наведи, чтобы убедиться</a><p/>
+		
+	<h2>Аббревиатуры и акронимы</h2>
+	<p>
+		Этот вебсайт посвящен <abbr title="HyperText Markup Language">HTML</abbr> и
+		<acronym title="Телеграфное агентство Советского Союза">ТАСС</acronym>.
+	</p>
+	
+	<h2>Цитаты</h2>
+	<blockquote title="Большая цитата">
+		<p>
+			You motherfucker, come on you little ass… fuck with me, eh? You fucking little asshole, dickhead cocksucker…You fuckin' come on, come fuck with me! I'll get your ass, you jerk! Oh, you fuckhead motherfucker! Fuck all you and your family! Come on, you cocksucker, slime bucket, shitface turdball! Come on, you scum sucker, you fucking with me? Come on, you asshole!!!
+		</p>
+	</blockquote>
+	
+	<p>
+		А теперь
+		<cite>небольшая цитата</cite>
+		и текст по краям
+	</p>
+	
+	<h2>Программный код</h2>
+	<code>
+		<var>ronankeatingisbland</var> = true;
+	</code>
+	
+	<pre>
+		&lt;div id="intro"&gt;
+		&lt;h1&gt;Заголовок&lt;/h1&gt;
+		&lt;p&gt;Параграфный параграф.&lt;/p&gt;
+		&lt;/div&gt;
+	</pre>
+	
+	<h2>Определения, адреса</h2>
+	<p>
+		<dfn title="Очень длинное описатие термина">Термин</dfn> - это...
+	</p>
+	
+	<address>
+		Улица Пушкина<br />
+		Дом Колотушкина
+	</address>
+	
+	<h2>Ещё</h2>
+	<bdo dir="rtl">Перевернуть текст задом наперед</bdo>
+	<p>
+		Введите: <kbd>слово</kbd>
+	</p>
+	
+	<p>
+		Очевидно, что это <del datetime="20030522">чепуха</del> <ins cite="http://www.msiter.ru">очень информативна</ins>.
+	</p>
+	
+	<h2>Ещё таблицы</h2>
+	<h3>Описание, выделение столбцов</h3>
+	<table summary="Брачные привычки цикад, демонстрирующие особенности по сравнению с саранчой">
+		<caption>Брачные особенности цикад</caption>
+	
+		<colgroup>
+			<col />
+			<col class="alternate" />
+			<col />
+		</colgroup>
+		<tr>
+			<td>Это</td>
+			<td>То</td>
+			<td>Другое</td>
+		</tr>
+		<tr>
+			<td>Птичка</td>
+			<td>Крокодил</td>
+			<td>Завтрак</td>
+		</tr>
+	</table>
+	
+	<h3>Заголовки, колонтитулы, "прокрутка"</h3>
+	<table>
+	<thead>
+		<tr>
+			<td>Заголовок 1</td>
+			<td>Заголовок 2</td>
+			<td>Заголовок 3</td>
+		</tr>
+	</thead>
+	<tfoot>
+	<tr>
+		<td>Нижний колонтитул 1</td>
+		<td>Нижний колонтитул 2</td>
+		<td>Нижний колонтитул 3</td>
+	</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Ячейка 1</td>
+			<td>Ячейка 2</td>
+			<td>Ячейка 3</td>
+		</tr>
+	</tbody>
+	</table>
+	
+	<form>
+		<label for="yourName">Ваше имя</label>
+		<input type="text" name="yourName" id="yourName" />
+	</form>
+	
+	<form>
+		<label for="bigCat">
+		<fieldset>
+			<legend>Коты</legend>
+			<p><label for="bigCat">Самый большой кот</label>
+			<input type="text" name="bigCat" id="bigCat" /></p>
+			<p><label for="smCat">Самый маленький кот</label>
+			<input type="text" name="smCat" id="smCat" /></p>
+		</fieldset>
+		</label>
+		<label for="bigDog">
+		<fieldset>
+			<legend>Псы</legend>
+			<p><label for="bigDog">Самый большой пёс</label>
+			<input type="text" name="bigDog" id="bigDog" /></p>
+			<p><label for="smDog">Самый маленький пёс</label>
+			<input type="text" name="smDog" id="smDog" /></p>
+		</fieldset>
+		</label>
+	</form>
+	
+	<p>Выбери животное</b>
+	<select name="animals">
+		<optgroup label="Коты">
+			<option value="mc">Мейн кун</option>
+			<option value="sav">Саванна</option>
+			<option value="manch">Манчкин</option>
+		</optgroup>
+		<optgroup label="Псы">
+			<option value="taksa">Такса</option>
+			<option value="bull">Бульдог</option>
+			<option value="alabay">Алабай</option>
+		</optgroup>
+	
+</body>
+</html>
